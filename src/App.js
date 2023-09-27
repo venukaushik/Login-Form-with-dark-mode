@@ -5,6 +5,8 @@ function App() {
 
   const [mode, setMode] = useState('mode' ? 'light' : 'dark')
 
+  const [modeIcon, setModeIcon] = useState('fas fa-toggle-off')
+
   const [modeText, setModeText] = useState('Dark')
 
 
@@ -18,9 +20,11 @@ function App() {
     if (mode === 'dark') {
       setMode('light')
       setModeText('Dark ')
+      setModeIcon('fas fa-toggle-off')
     } else {
       setMode('dark')
       setModeText('Light')
+      setModeIcon('fas fa-toggle-on')
     }
   }
   return (
@@ -61,7 +65,7 @@ function App() {
 
         <div className="theme-toggle">
           <h2>{modeText} Theme</h2>
-          <i onClick={toggleTheme} className="fas fa-toggle-on"></i>
+          <i onClick={toggleTheme} className={modeIcon}></i>
         </div>
       </div>
     </div >
