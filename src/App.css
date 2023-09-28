@@ -78,7 +78,8 @@ h2 {
 }
 
 .top i {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  cursor: pointer;
 }
 
 .divider {
@@ -155,6 +156,6 @@ button {
 
 @media screen and (max-width:478px) {
   .login {
-    width: 95%;
+    width: 90%;
   }
 }
