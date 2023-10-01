@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css'
-import Login from './Components/Login';
+import Login from "./Components/Login";
 
 function App() {
 
@@ -10,7 +10,7 @@ function App() {
 
   const [modeText, setModeText] = useState('Dark')
 
-  let toggleTheme = () => {
+  const toggleTheme = () => {
     if (mode === 'dark') {
       setMode('light')
       setModeText('Dark ')
@@ -22,7 +22,7 @@ function App() {
     }
   }
   return (
-    <Login mode={mode} modeIcon={modeIcon} modeText={modeText} />
+    <Login mode={mode} modeIcon={modeIcon} modeText={modeText} toggleTheme={toggleTheme} />
   )
 }
 

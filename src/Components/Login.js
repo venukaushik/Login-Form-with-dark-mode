@@ -39,7 +39,7 @@ function Login(props) {
 
                 <div className="theme-toggle">
                     <h2>{props.modeText} Theme</h2>
-                    <i onClick={props.toggleTheme} className={props.modeIcon}></i>
+                    <i onClick={props.toggleTheme} className={props.modeIcon} ></i>
                 </div>
             </div>
         </div >
