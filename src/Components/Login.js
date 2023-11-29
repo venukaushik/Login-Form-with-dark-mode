@@ -1,6 +1,10 @@
 import React from 'react'
 
 function Login(props) {
+
+    let myUsername = document.getElementById('username')
+    console.log(myUsername)
+
     return (
         <div className="app" data-theme={props.mode}>
             <div className="login">
@@ -16,9 +20,9 @@ function Login(props) {
                     <p className="divider"><span>Or</span></p>
                     <form>
                         <label>E-mail</label>
-                        <input type="email" placeholder='Enter your email' />
+                        <input type="email" id='username' placeholder='Enter your email' />
                         <label>Password</label>
-                        <input type="password" placeholder='Enter your password' />
+                        <input type="password" id='password' placeholder='Enter your password' />
 
                         <div className="remember">
                             <input type="checkbox" name="remember" id="remember" />
